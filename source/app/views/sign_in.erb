@@ -1,0 +1,27 @@
+<div class="header">
+</div>
+
+<!-- ========================================= -->
+					<!-- CURRENT USER LOGIN -->
+<!-- ========================================= -->
+
+
+<div class="main">
+	<h1>Login</h1>
+
+  <% if @error %>
+    <div class="errors"><%= @error %></div>
+  <% end %>
+
+  <form id="sign-in" method="post" action="/sessions">
+    <label class="fil tag" for="email">Email</label>
+    <input class="main f" type="email" name="email" placeholder="e.g., me@example.com" value="<%= @email %>"><br>
+    <label class="fil tag" for="password">Password</label>
+    <input class="main f" type="password" name="password" placeholder="6 or more characters">
+    <br>
+    <div class="main go-right">
+    	<br>
+    	<input class="submit" type="submit" value="Sign In"></div>
+  </form>
+
+</div>

@@ -1,0 +1,1 @@
+Pseudo-anonymous application developed as a space for individuals to share and potentially connect within their current broader network (roughly 'friends and friends of friends') by way of safely asking and answering questions. As so many things in life, a work in progress.

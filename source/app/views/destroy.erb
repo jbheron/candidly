@@ -1,0 +1,9 @@
+<div class="container">
+<form action="/notes/<%= @note.id %>/delete" method="post">
+  <input type="hidden" name="_method" value="delete">
+
+  <p><%= @note.title %></p>
+  <br>
+  <p><%= @note.description %></p>
+  <input type="submit" value="Would you destory this solar system????">
+</form></div>

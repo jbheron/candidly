@@ -1,0 +1,49 @@
+				<br>
+<h1>Candid.ly</h1>
+	<div class="splash-header">
+		<hr class="hr-top">
+			<div class="splash-spacer">
+				<br>
+				<h3 class="fil q">Q:</h3>
+				<h2 class="qst">Ask tough questions...</h2>
+				<br>
+				<h3 class="fil a">A:</h3>
+				<br>
+				<br>
+				<h2 class="ans">...Get real answers.</h2>
+				<br>
+				<br>
+				<br>
+				<h2 class="fil tag">Meet the friends you didn't know you had.</h2>
+			</div>
+		<hr class="hr-bottom">
+  <br>
+</div>
+
+<div class="main">
+      <% if current_user %>
+          <form class="sign-out" id="sign-out" action="/sessions/<%= current_user.id %>" method="post">
+            <input name="_method" type="hidden" value="delete" />
+            <input class="invbtn" type="submit" value="Sign Out">/
+          </form>
+      <% else %>
+      	<div class"splash-login">
+				<br>
+				<br>
+				<a class="login" href="/sessions/new">
+					<div id="login">
+        		<p class="login" >Login <span class="go-right">&#62;</span></p>
+				<hr class="underlogin">
+				</a>
+				</div  id="login">
+  				<a class="login" href="/users/new">
+						<div>
+	        		<p class="login" >Signup 
+	        		<span class="go-right">&#62;</span></p>
+						<hr class="underlogin">
+					</a>
+
+      	</div>
+      <% end %>
+
+</div>

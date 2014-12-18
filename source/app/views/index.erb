@@ -1,0 +1,12 @@
+<div class="container">
+<a  href="/notes/new">Make a new note!</a>
+</div>
+
+	<% @notes.each do |note| %>
+		<ul class="container">
+		<p> <%= note.title %> </p>
+		<p> <a href="/notes/<%= note.id %>"><%= note.description %></a></p>
+	<a href="/notes/<%= note.id %>/edit">Edit</a>
+	<a href="/notes/<%= note.id %>/confirm">Delete</a>
+	</ul>
+	<% end %>
